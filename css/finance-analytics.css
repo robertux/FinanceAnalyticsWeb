@@ -1,4 +1,4 @@
-a.transaction-title.subtitle:hover, a.account-alias.subtitle:hover {
+a.transaction-title.subtitle:hover, a.account-alias.subtitle:hover, a.category-name.subtitle:hover {
 	text-decoration: underline;
 }
 
