@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Finance Analytics</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bulma.css">
+		<link rel="stylesheet" type="text/css" href="css/finance-analytics.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="#">Finance Analytics</a>
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navBarContent">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navBarContent" class="navbar-menu">
+				<div class="navbar-start">
+					<a href="#" class="navbar-item has-text-weight-bold">Transactions</a>
+					<a href="#" class="navbar-item">Accounts</a>
+					<a href="#" class="navbar-item">Categories</a>
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">Account</a>
+
+						<div class="navbar-dropdown is-right">
+							<span class="navbar-item"><span class="icon"><i class="fas fa-user-circle"></i></span>Account name</span>
+							<hr class="navbar-divider">
+							<a href="#" class="navbar-item">Settings</a>
+							<a href="#" class="navbar-item">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</nav>
+		<section class="section">
+
+			<div class="container">
+				<div class="field has-addons">
+					<div class="control has-icons-right is-expanded">
+						<input class="input is-medium" type="text" placeholder="Add new transaction and amount" />
+					</div>
+					<div class="control">
+						<button class="button is-medium"><span class="icon"><i class="fas fa-credit-card"></i></span></button>
+					</div>
+					<div class="control">
+						<button class="button is-medium"><span class="icon"><i class="fas fa-clock"></i></span></button>
+					</div>
+					<div class="control">
+						<button class="button is-medium"><span class="icon"><i class="fas fa-tag"></i></span></button>
+					</div>
+					<div class="control">
+						<button class="button is-medium"><span class="icon"><i class="fas fa-file-alt"></i></span></button>
+					</div>
+				</div>
+
+				<div class="panel">
+					<p class="panel-heading"><span>Transactions</span></p>
+					<div class="panel-block">
+				
+						<table class="table is-narrow is-fullwidth">
+							<tbody>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a  href="#" class="transaction-title subtitle">Compra combustible Texaco</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Credit Card (****3261)</span>
+													<span class="transaction-text is-size-7"><span class="icon"><i class="fas fa-file-alt"></i></span>Compra de combustible en gasolinera Texaco a 3.55 el galón</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-20 10:25:40 a.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Transporte</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-danger">$23.50</span></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a href="#" class="transaction-title subtitle">Pago Recibo CAESS</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Credit Card (****3261)</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-19 09:32:58 a.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Utilidades</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-danger">$43.48</span></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a href="#" class="transaction-title subtitle">Cena Café 4 Monkeys</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Main Account (****1215)</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-18 08:43:12 p.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Alimentación</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-danger">$31.76</span></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a href="#" class="transaction-title subtitle">Jarabe Gammatos, Inhalador Ventidos e Inhalador Tropivent</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Cash Wallet (****)</span>
+													<span class="transaction-text is-size-7"><span class="icon"><i class="fas fa-file-alt"></i></span>Compra de medicamentos en farmacia San Nicolás Escalón</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-18 04:10:10 p.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Medicamentos</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-danger">$29.35</span></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a href="#" class="transaction-title subtitle">Gastos de transporte público de la semana</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Cash Wallet (****)</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-18 10:04:12 a.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Transporte</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-danger">$4.75</span></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a href="#" class="transaction-title subtitle">Pago Renta de la casa</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Budgets Account (****0900)</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-17 11:50:55 a.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Cuentas por pagar</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-danger">$250.00</span></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="transaction columns">
+											<div class="transaction-content column is-11">
+												<div class="transaction-header">
+													<a href="#" class="transaction-title subtitle">Pago Quincena Abril</a>
+												</div>
+												<div class="transaction-source has-text-grey">
+													<span class="transaction-account is-size-7"><span class="icon"><i class="fas fa-credit-card"></i></span>Main Account (****1215)</span>
+												</div>
+												<div class="transaction-details has-text-grey">
+													<span class="transaction-date is-size-7"><span class="icon"><i class="fas fa-clock"></i></span>2019-04-15 09:03:15 a.m.</span>
+													<span class="transaction-category is-size-7"><span class="icon"><i class="fas fa-tag"></i></span>Salario</span>
+											</div>
+											</div>
+											<div class="transaction-price column is-1"><span class="is-pulled-right has-text-success">$1,470.47</span></div>
+										</div>
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+
+				<div class="panel">
+					<p class="panel-heading"><span class="icon"><i class="fas fa-credit-card"></i></span> Select account</p>
+					<div class="panel-block">
+						<div class="select is-multiple">
+							<select multiple size="4">
+								<option>Main account (****1215)</option>
+								<option>Budget account (****0900)</option>
+								<option>Credit card (****3261)</option>
+								<option>Wallet (****)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel">
+					<p class="panel-heading"><span class="icon"><i class="fas fa-clock"></i></span> Select date time</p>
+					<div class="panel-block">
+						<div class="field is-grouped">
+							<div class="control">
+								<input class="input" type="date" />
+							</div>
+							<div class="control">
+								<input class="input" type="time" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel">
+					<p class="panel-heading"><span class="icon"><i class="fas fa-tag"></i></span> Select category</p>
+					<div class="panel-block">
+						<div class="select is-multiple">
+							<select multiple size="6">
+								<option>General</option>
+								<option>Transporte</option>
+								<option>Medicamentos</option>
+								<option>Utilidades</option>
+								<option>Alimentacion</option>
+								<option>Ropa</option>
+								<option>Entretenimiento</option>
+								<option>Salario</option>
+								<option>Cuentas por pagar</option>
+								<option>Supermercado</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel">
+					<p class="panel-heading"><span class="icon"><i class="fas fa-file-alt"></i></span> Add description</p>
+					<div class="panel-block">
+						<textarea class="textarea" rows="3"></textarea>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p><strong>FinanceAnalytics</strong> v0.1 developed by <a href="http://robertux.info">Robertux</a>. </p>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/vue/vue-2.6.10.js"></script>
+	</body>
+</html>
