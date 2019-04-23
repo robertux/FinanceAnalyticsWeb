@@ -1,3 +1,11 @@
 a.transaction-title.subtitle:hover, a.account-alias.subtitle:hover {
 	text-decoration: underline;
 }
+
+.transaction-account a, .transaction-date a, .transaction-category a {
+	color: #7a7a7a;
+}
+
+.transaction-account a:hover, .transaction-date a:hover, .transaction-category a:hover {
+	text-decoration: underline;
+}
