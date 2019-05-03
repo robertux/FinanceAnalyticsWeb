@@ -2,7 +2,7 @@ var CategoryListComponent = {
 	components: {
 		'category-row': CategoryRowComponent
 	},
-	props: ['categories'],
+	props: {categories: {type: Array, required: true}},
 	template: `
 		<div class="panel">
 			<p class="panel-heading"><span>Categories</span></p>
@@ -10,7 +10,11 @@ var CategoryListComponent = {
 		
 				<table class="table is-narrow is-fullwidth">
 					<tbody>
-						<category-row v-for="category in categories" v-bind:categoryname="category" v-on:category-row-click="$emit('category-click', category)"></category-row>
+						<tr v-for="category in categories" v-bind:key="category.name">
+							<td>
+								<category-row v-bind:category="category" v-on:category-row-click="$emit('category-click', category)"></category-row>
+							</td>
+						</tr>
 					</tbody>
 				</table>
 

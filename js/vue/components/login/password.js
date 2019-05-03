@@ -1,5 +1,5 @@
 var PasswordComponent = {
-	props: ['value'],
+	props: {value: {type: String, required: true}},
 	template: `
 		<div class="field">
 			<div class="control has-icons-left">

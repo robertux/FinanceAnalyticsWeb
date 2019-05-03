@@ -1,9 +1,18 @@
-new Vue({
+var vueApp = new Vue({
 	el: '#app',
 	components: {
 		'category-list': CategoryListComponent
 	},
 	data: {
-		categories: ['General', 'Transporte', 'Medicamentos', 'Utilidades', 'Alimentación', 'Vestuario', 'Entretenimiento', 'Salario', 'Cuentas por pagar', 'Supermercado']
+		categories: [{name: 'General'}, 
+			{name: 'Transporte'}, 
+			{name: 'Medicamentos'}, 
+			{name: 'Utilidades'}, 
+			{name: 'Alimentación'}, 
+			{name: 'Vestuario'}, 
+			{name: 'Entretenimiento'}, 
+			{name: 'Salario'}, 
+			{name: 'Cuentas por pagar'}, 
+			{name: 'Supermercado'}]
 	}
 });

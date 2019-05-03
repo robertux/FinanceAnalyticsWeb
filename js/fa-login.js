@@ -1,4 +1,4 @@
-new Vue({
+var vueApp = new Vue({
 	el: '#app',
 	components: {
 		'login-form': LoginFormComponent

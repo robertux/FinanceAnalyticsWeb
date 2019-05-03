@@ -1,5 +1,4 @@
 var SubmitComponent = {
-	props: [],
 	template: `
 		<div class="field">
 			<div class="control">
